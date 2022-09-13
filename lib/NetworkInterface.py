@@ -4,7 +4,7 @@ from lib.pico.controller import Controller
 
 class NetworkInterface:
     
-    def __init__(self, board, ssid='ssid',pw='ssid_pw'):
+    def __init__(self, board, ssid, pw):
         self.board_ = board
         self.wlan_ = self.connect(ssid, pw)
         self.controller_ = Controller(self.board_)
